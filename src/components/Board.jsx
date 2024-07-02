@@ -9,7 +9,7 @@ export default function Board({ movesHistory, onMovesHistoryChange }) {
   const [gotWinner, winnerSquares] = checkWinner(squares);
 
   if (gotWinner) {
-    turn = `${isXNext ? "O" : "X"} is the winner`;
+    turn = `Winner is ${isXNext ? "O" : "X"}`;
   } else turn = `Its ${isXNext ? "X" : "O"}'s turn`;
 
   const handleClick = (i) => {
